@@ -4,3 +4,16 @@ on:
     types: [opened]
 permissions:
   pull-requests: write
+  
+  Update the contents of the file to:
+
+name: Hello here!
+on:
+  pull_request:
+    types: [opened]
+permissions:
+  pull-requests: write
+jobs:
+  build:
+    name: running on umbuntu-latest
+    runs-on: ubuntu-latest
